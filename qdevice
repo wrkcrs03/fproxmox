@@ -1,0 +1,11 @@
+#On the fake node(do it as root / enable root login via ssh):
+  apt update
+  apt install corosync-qnetd
+  apt install corosync-qdevice
+  
+#Do this on each node(pve1 & pve2):
+  apt update
+  apt install corosync-qdevice
+
+#Do this on pve1:
+  pvecm qdevice setup <ip-address> -f
