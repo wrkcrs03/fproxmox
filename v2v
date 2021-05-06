@@ -1,0 +1,5 @@
+1- Commands:
+    # qm importovf <vmid> /path/to/the/ovf&vmdk/file.ovf <storagename>
+    # sed -i 's/scsi/ide/g' /etc/pve/qemu-server/<vmid>.conf
+
+2- Then add a Network Device manually.
